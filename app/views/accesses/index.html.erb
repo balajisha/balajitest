@@ -1,0 +1,8 @@
+<% Detail.all.each do |acc| %><br>
+First name: <%= acc.firstname %><br>
+Lastname: <%= acc.lastname %><br>
+Location: <%= acc.location %><br>
+Salary: <%= acc.salary %><br>
+<%= link_to 'edit',edit_access_path(acc) %>
+<hr>
+<% end %>
